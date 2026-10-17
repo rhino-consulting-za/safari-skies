@@ -1,0 +1,57 @@
+{
+  "version": 202610170557,
+  "note": "SPEC.md section 11 ad placements and caps. test_units are Google's public test ad units; real units come from .env at export (tools/export_android.sh), never this file.",
+  "test_units": {
+    "banner": "ca-app-pub-3940256099942544/9214589741",
+    "interstitial": "ca-app-pub-3940256099942544/1033173712",
+    "rewarded": "ca-app-pub-3940256099942544/5224354917"
+  },
+  "max_ad_content_rating": "T",
+  "retry_load_s": 30,
+  "mock_banner_px": 150,
+  "banner": {
+    "enabled": true
+  },
+  "interstitial": {
+    "min_gap_s": 180,
+    "session_cap": 6,
+    "min_level": 4,
+    "after_purchase_s": 30,
+    "panel_close_every": 3,
+    "panels": [
+      "lodge",
+      "flights_board"
+    ],
+    "triggers": [
+      "build_complete_return",
+      "panel_close_3rd"
+    ]
+  },
+  "rewarded": {
+    "double_offline": {
+      "cap_per_return": 1,
+      "multiplier": 2,
+      "min_coins": 100
+    },
+    "free_skip": {
+      "daily_cap": 3,
+      "max_minutes": 60
+    },
+    "forecast": {
+      "cap_per_game_day": 1,
+      "states": 3,
+      "game_days": 2
+    },
+    "extra_drive": {
+      "daily_cap": 2
+    },
+    "free_bb": {
+      "daily_cap": 3,
+      "bb": 1
+    },
+    "double_contract": {
+      "cap_per_contract": 1,
+      "multiplier": 2
+    }
+  }
+}

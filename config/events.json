@@ -1,0 +1,27 @@
+{
+  "version": 202610170557,
+  "note": "SPEC.md section 12 events (M7) and the Flying Safaris Africa charter (section 7). The game builds the charter at M7; balance_sim models it from M5 (Ryno 2026-10-13).",
+  "fsa_charter": {
+    "eligible": {
+      "lodge_stars": 2,
+      "guest_rating": 4.0,
+      "strip_level": 3
+    },
+    "cooldown_days": 5,
+    "chance_per_day": 0.2,
+    "rooms_free": 2,
+    "guests": 4,
+    "tier": "safari",
+    "nights": 2,
+    "nightly_mult": 3.0,
+    "voucher_max": 3,
+    "badge_days": 3,
+    "badge_pull_mult": 1.2,
+    "aircraft": "marula_208",
+    "sprite": "aircraft/marula_208_fsa",
+    "registration": "ZS-FSA",
+    "bearing_deg": 225,
+    "ground_s": 8,
+    "check_s": 600
+  }
+}

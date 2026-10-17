@@ -1,0 +1,184 @@
+{
+  "version": 202610170557,
+  "start": {
+    "region": "kruger",
+    "coins": 900,
+    "bb": 50,
+    "xp": 348,
+    "level": 2
+  },
+  "clock": {
+    "tick_s": 1,
+    "game_day_min": 120,
+    "slots": [
+      "dawn",
+      "morning",
+      "midday",
+      "afternoon",
+      "dusk",
+      "night"
+    ],
+    "skew_max_s": 600,
+    "resume_catch_up_s": 2
+  },
+  "cost_growth": 1.35,
+  "time_growth": 1.25,
+  "price_sig_figs": 2,
+  "skip_k": 0.9,
+  "skip_exp": 0.7,
+  "skip_free_minutes": 2,
+  "bb_rate_base": 20,
+  "bb_rate_growth": 1.15,
+  "xp": {
+    "coins_per_xp": 10,
+    "per_guest": 5,
+    "per_build": 75,
+    "per_sighting": 2,
+    "per_first_sighting": 25,
+    "level_base": 100,
+    "level_exp": 1.8,
+    "level_cap": 60
+  },
+  "level_up": {
+    "coins_per_level": 50,
+    "bb": 2
+  },
+  "builders": {
+    "start": 1,
+    "max": 2,
+    "extra_slot_bb": 200
+  },
+  "offline_cap_h": 4,
+  "fuel": {
+    "avgas_coins": 15,
+    "jeta1_coins": 40
+  },
+  "pull": [
+    1.0,
+    1.4,
+    2.0,
+    2.8,
+    4.0
+  ],
+  "region_unlock_days": 7,
+  "region_unlock_bb": 500,
+  "region_unlock_coins": 130000,
+  "region_unlock_requires": {
+    "lodge_stars": 3,
+    "strip_level": 5,
+    "level": 16
+  },
+  "login_streak_bb": [
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    5
+  ],
+  "flights": {
+    "frequency_scale": 6,
+    "first_arrival_s": 30,
+    "taxi_s": 4,
+    "receive_walk_s": 3,
+    "circuit_hold_min": 10,
+    "stand_nudge_after_diverts": 2,
+    "max_aircraft_per_route": 2
+  },
+  "save": {
+    "autosave_s": 30
+  },
+  "lodge": {
+    "nightly_scale": 1.0,
+    "satisfaction": {
+      "stars": 0.4,
+      "sightings": 0.4,
+      "comfort": 0.2
+    },
+    "comfort_base": 1.0,
+    "view_plot_comfort": 0.05,
+    "review_neutral": 0.5,
+    "review": {
+      "points_per_s": 2.0,
+      "drift_cap": 15.0,
+      "decay_per_game_day": 1.0
+    },
+    "guest_rating": {
+      "amenity_points": 2.0,
+      "staff_points": 3.0,
+      "points_per_star": 20.0,
+      "bonus_cap": 1.0,
+      "drift_span": 1.0,
+      "min": 0.5,
+      "max": 5.0
+    },
+    "reviews_kept": 10,
+    "demand": {
+      "wildlife_per_species": 0.05,
+      "wildlife_per_big_five": 0.1,
+      "wildlife_cap": 2.5,
+      "event_until_m7": 1.0
+    }
+  },
+  "wildlife": {
+    "p_cap": 0.95,
+    "habitat_cap": 2.0,
+    "prey_full": 3,
+    "duplicate_factor": 0.5,
+    "unasked_weight": 0.1,
+    "value_max": 10,
+    "rare_rarity_max": 0.1,
+    "rare_drift": 1.0,
+    "after_rain_insects": 2.0,
+    "bird_mult_stat": "bird_sightings_mult",
+    "guide_stat": "sighting_chance",
+    "outings": {
+      "drive": {
+        "slots": [
+          "dawn",
+          "dusk"
+        ],
+        "rolls": 4,
+        "base_count": 1,
+        "count_stat": "drives_per_slot"
+      },
+      "night_drive": {
+        "slots": [
+          "night"
+        ],
+        "rolls": 3,
+        "base_count": 0,
+        "count_stat": "night_drives",
+        "max_count": 1
+      },
+      "walk": {
+        "slots": [
+          "morning"
+        ],
+        "rolls": 3,
+        "base_count": 0,
+        "count_stat": "walks",
+        "max_count": 1
+      },
+      "hide": {
+        "slots": [
+          "midday"
+        ],
+        "rolls": 2,
+        "base_count": 0,
+        "count_stat": "birder_tier",
+        "max_count": 1
+      },
+      "macro_hide": {
+        "slots": [
+          "afternoon"
+        ],
+        "rolls": 2,
+        "base_count": 0,
+        "count_stat": "insect_sightings",
+        "max_count": 1
+      }
+    }
+  }
+}
