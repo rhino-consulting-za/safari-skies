@@ -1,5 +1,5 @@
 {
-  "version": 202610181354,
+  "version": 202610182045,
   "start": {
     "region": "kruger",
     "coins": 900,
@@ -44,9 +44,36 @@
     "bb": 2
   },
   "builders": {
-    "start": 1,
-    "max": 2,
-    "extra_slot_bb": 200
+    "start": 2,
+    "max": 3,
+    "extra_slot_bb": 200,
+    "note": "v20 (Ryno 2026-10-18 item 5; PROVISIONAL): 2 builders from the start; the 3rd is the reward for the lodge's reward_at_stars (2\u2605), or bought early for extra_slot_bb Bush Bucks.",
+    "reward_at_stars": 2
+  },
+  "timers": {
+    "note": "v20 (Ryno 2026-10-18 items 1-3; PROVISIONAL): nothing stalls the first session. A build or upgrade costing under instant_cost_minutes_of_income of the camp's income (IncomeModel.camp_rate, at least income_floor_per_h) is instant, and everything is instant below instant_below_stars (up to 1\u2605). A timer with free_finish_min or less left finishes free; any timer finishes for coins: minutes left x income a minute x coin_skip_mult.",
+    "instant_cost_minutes_of_income": 10,
+    "instant_below_stars": 2,
+    "free_finish_min": 5,
+    "coin_skip_mult": 2,
+    "income_floor_per_h": 100
+  },
+  "updates": {
+    "note": "v20 (Ryno 2026-10-18 item 13; PROVISIONAL): Google Play In-App Updates. At launch, with an update on Play, a flexible prompt (\"A new version is ready: Update\") at most every flexible_every_h hours; a build below min_version_code (remote config, 0 = never) gets the immediate, blocking update.",
+    "min_version_code": 0,
+    "flexible_every_h": 24
+  },
+  "intro": {
+    "note": "v20 (Ryno 2026-10-18 items 6-7; PROVISIONAL): the first session's pace, while the player is in the game (never in the catch-up of time away), with missions 1 to intro running, or in the first pace_sessions sessions while the lodge is below pace_below_stars (the 1-star camp, where every build is instant too: a scripted player finished the intro in 5 minutes and then waited 270 s at the normal pace; all through the 1-star camp it brought Okavango two days early in balance_sim). Arrivals fly at frequency_scale instead of flights.frequency_scale (Hoedspruit every 60 s) and turn round in turnaround_mult of their time (the one stand frees for the next minute's landing), transfers take transfer_mult of transfers.transfer_s and guest drives leave every drive_cooldown_min (the one game vehicle has time for drives between runs), guests stay stay_min game minutes, and guests' tips wait in the lodge's tip jar for a tap (Collect), paid by themselves after tip_jar_auto_collect_s and at once while away or after the intro missions, so none is ever lost. With clear_landings nothing stops these arrivals: no night (flare-path lights), storm or wet-strip closure, at fair-weather demand (a first session started in the game's night slot waited up to 20 minutes for a landing).",
+    "pace_below_stars": 2,
+    "pace_sessions": 1,
+    "frequency_scale": 30,
+    "stay_min": 2,
+    "turnaround_mult": 0.2,
+    "transfer_mult": 0.25,
+    "drive_cooldown_min": 1,
+    "tip_jar_auto_collect_s": 120,
+    "clear_landings": true
   },
   "offline_cap_h": 4,
   "fuel": {
