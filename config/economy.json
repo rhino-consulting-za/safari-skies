@@ -1,5 +1,5 @@
 {
-  "version": 202610170557,
+  "version": 202610180356,
   "start": {
     "region": "kruger",
     "coins": 900,
@@ -62,6 +62,30 @@
   ],
   "region_unlock_days": 7,
   "region_unlock_bb": 500,
+  "coin_chests": {
+    "note": "M8.5 v14 (Ryno 2026-10-18; Hotel Empire / Idle Airport pattern): Shop chests of coins for Bush Bucks. A chest holds `hours` of the camp's current coins an hour (IncomeModel.camp_rate: arrivals, rooms, fuel; at least min_coins_per_hour), rounded to price_sig_figs, priced at the buy-the-difference rate (bb_rate_base x bb_rate_growth^(level-1) coins a Bush Buck) less its bulk discount, rounded up.",
+    "min_coins_per_hour": 100,
+    "chests": [
+      {
+        "id": "small",
+        "name": "Small chest",
+        "hours": 1,
+        "discount": 0.0
+      },
+      {
+        "id": "medium",
+        "name": "Medium chest",
+        "hours": 4,
+        "discount": 0.1
+      },
+      {
+        "id": "large",
+        "name": "Large chest",
+        "hours": 12,
+        "discount": 0.2
+      }
+    ]
+  },
   "region_unlock_coins": 130000,
   "region_unlock_requires": {
     "lodge_stars": 3,
