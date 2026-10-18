@@ -1,5 +1,5 @@
 {
-  "version": 202610181042,
+  "version": 202610181354,
   "start": {
     "region": "kruger",
     "coins": 900,
@@ -108,7 +108,9 @@
     "receive_walk_s": 3,
     "circuit_hold_min": 10,
     "stand_nudge_after_diverts": 2,
-    "max_aircraft_per_route": 2
+    "max_aircraft_per_route": 2,
+    "booking_note": "v19 (Ryno 2026-10-18 item 35): arrivals are bookings: a flight carries guests only for the beds free when it lands (free now less every other booking, plus checkouts due before its approach and taxi are over) and does not launch with none; at most max_waiting_aircraft wait on a stand for beds, the rest keep holding. PROVISIONAL.",
+    "max_waiting_aircraft": 1
   },
   "save": {
     "autosave_s": 30
