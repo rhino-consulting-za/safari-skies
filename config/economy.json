@@ -1,5 +1,5 @@
 {
-  "version": 202610180534,
+  "version": 202610180646,
   "start": {
     "region": "kruger",
     "coins": 900,
@@ -154,6 +154,16 @@
     }
   },
   "wildlife": {
+    "drive_note": "M8.5 v16 (Ryno 2026-10-18: every guest gets a game drive during the stay; PROVISIONAL): besides the dawn and dusk drives (outings.drive, the better odds of those slots), a guest drive leaves on demand, rolling outings.drive.rolls with the current slot's odds, for the guests in camp who have not had a drive: when at least drive_min_guests of them wait, or one has waited drive_max_wait_frac of its stay, once drive_cooldown_min[lodge stars - 1] game minutes (divided by the vehicles) have passed since the last drive. Only its riders count its sightings; any drive marks the guests present as having had one.",
+    "drive_min_guests": 2,
+    "drive_cooldown_min": [
+      6,
+      10,
+      15,
+      20,
+      25
+    ],
+    "drive_max_wait_frac": 0.6,
     "p_cap": 0.95,
     "habitat_cap": 2.0,
     "prey_full": 3,
