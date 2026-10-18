@@ -1,5 +1,5 @@
 {
-  "version": 202610180407,
+  "version": 202610180534,
   "start": {
     "region": "kruger",
     "coins": 900,
@@ -114,6 +114,14 @@
     "autosave_s": 30
   },
   "lodge": {
+    "stay_note": "M8.5 v15 (Ryno 2026-10-18, v14 playtest: 2 h stays stalled the guest flow): a guest stays stay_min_by_star[lodge stars - 1] game minutes (at x1, PROVISIONAL), whatever the tier, and at checkout pays its room for its tier's stay_nights (guests.json) at the nightly rate (nightly x unit mult x (1 + nightly amenities) x nightly_scale), however short the stay, with its tip: a guest is worth what it was (balance_sim: every target met with no rate changed, free Bush Bucks 13.1 a day against 8-13). Wages leave the coins (the offline bank while away, never below zero) at each game-day boundary. The FSA charter keeps its own nights.",
+    "stay_min_by_star": [
+      12,
+      30,
+      60,
+      120,
+      240
+    ],
     "nightly_scale": 1.0,
     "satisfaction": {
       "stars": 0.4,
