@@ -1,5 +1,5 @@
 {
-  "version": 202610180356,
+  "version": 202610180407,
   "note": "SPEC.md section 12 events (M7) and the Flying Safaris Africa charter (section 7). The game builds the charter at M7; balance_sim models it from M5 (Ryno 2026-10-13).",
   "fsa_charter": {
     "eligible": {
