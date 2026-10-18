@@ -1,5 +1,5 @@
 {
-  "version": 202610180821,
+  "version": 202610181042,
   "start": {
     "region": "kruger",
     "coins": 900,
@@ -223,6 +223,33 @@
         "count_stat": "insect_sightings",
         "max_count": 1
       }
+    }
+  },
+  "transfers": {
+    "note": "v17 (Ryno 2026-10-18 items 14 and 15; PROVISIONAL values): no taps. Received guests walk walk_s to the waiting area; a game vehicle (as many as the drive vehicles: wildlife.outings.drive base_count plus drives_per_slot) drives transfer_s each way along the road, carries vehicle_seats a run, and drops them at the lodge, where their stay starts. Leavers ride out from the lodge the same way and wait at the waiting area to board. A guest drive leaves only with a vehicle free (transfers first). The waiting area (building terminal_shelter, levels 0 to 3) seats `seats`; arrivals who find a seat tip tip_bonus more.",
+    "transfer_s": 40,
+    "walk_s": 10,
+    "vehicle_seats": 6,
+    "waiting_area": {
+      "building": "terminal_shelter",
+      "levels": [
+        {
+          "seats": 0,
+          "tip_bonus": 0.0
+        },
+        {
+          "seats": 6,
+          "tip_bonus": 0.05
+        },
+        {
+          "seats": 12,
+          "tip_bonus": 0.1
+        },
+        {
+          "seats": 20,
+          "tip_bonus": 0.15
+        }
+      ]
     }
   }
 }
