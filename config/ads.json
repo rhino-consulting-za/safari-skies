@@ -1,5 +1,5 @@
 {
-  "version": 202610182045,
+  "version": 202610190359,
   "note": "SPEC.md section 11 ad placements and caps. test_units are Google's public test ad units; real units come from .env at export (tools/export_android.sh), never this file. M8.5 (Ryno 2026-10-17): rewarded boost doubles all income (arrivals, nightly rates, tips, fuel; also while away) for boost_minutes, stacking to boost_cap_minutes, never during missions 1-12; players with remove_ads may still opt in. A VIP guest walks through the camp every vip.every_min of play and stays stay_s: a tap pays bonus_income_min minutes of the camp's income (at least min_coins), or a rewarded ad x3 (rewarded.vip). PROVISIONAL: daily_cap, bonus_income_min, min_coins, stay_s. Rewarded coins (Ryno 2026-10-18, Hotel Empire / Idle Airport): \"Watch ad: +N coins\" next to Use \u25c6N on whatever the player cannot afford (tiles, Build-mode tags, the mission popup) gives exactly the missing coins, at most max(coin_ad_min, coin_ad_cap_hours of current income); the Shop's Free coins gives that cap; coin_ad_daily ads a day between them; never in missions 1-12.",
   "test_units": {
     "banner": "ca-app-pub-3940256099942544/9214589741",
@@ -52,7 +52,7 @@
       "daily_cap": 2
     },
     "free_bb": {
-      "daily_cap": 3,
+      "daily_cap": 2,
       "bb": 1
     },
     "double_contract": {
